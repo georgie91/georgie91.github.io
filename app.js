@@ -149,3 +149,5 @@ const github = document.getElementById('gh')
 const discord = document.getElementById('dc')
 
 twitter.onclick = () => {window.open('https://twitter.com/NateGorm91','_blank','resizable=yes')}
+github.onclick = () => {window.open('https://github.com/georgie91','_blank','resizable=yes')}
+discord.onclick = () => {window.open('https://discord.gg/spQnjf','_blank','resizable=yes')}
