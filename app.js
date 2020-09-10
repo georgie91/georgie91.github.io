@@ -115,15 +115,12 @@ projectsBtn.onclick = () => {
     projectsModal.style.display = 'block'
 }
 
-close2.onclick = () => {
-    projectsModal.style.display = 'none'
+close.onclick = () => {
     contactModal.style.display = 'none'
     
 }
 close2.onclick = () => {
-    projectsModal.style.display = 'none'
-    contactModal.style.display = 'none'
-    
+    projectsModal.style.display = 'none'    
 }
 window.onclick = (event) => {
     if (event.target == contactModal){
