@@ -104,7 +104,7 @@ const contactModal = document.querySelector('.modal-contact')
 const contactBtn = document.querySelector('#contactBtn')
 const projectsModal = document.querySelector('.modal-projects')
 const projectsBtn = document.querySelector('#projectsBtn')
-const close = document.querySelector(".close")
+const close1 = document.querySelector(".close")
 const close2 = document.querySelector(".project-close")
 
 contactBtn.onclick = () => {
@@ -115,7 +115,7 @@ projectsBtn.onclick = () => {
     projectsModal.style.display = 'block'
 }
 
-close.onclick = () => {
+close1.onclick = () => {
     contactModal.style.display = 'none'
     
 }
