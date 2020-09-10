@@ -1,0 +1,289 @@
+body {
+    all: unset;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    all: unset;
+}
+
+main {
+    background-image: url(./images/hexagon.jfif);
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(78, 76, 76, 0.822),rgb(36, 36, 36));
+    height: 5vh;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.nav {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-item {
+    all: unset;
+    background-color: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    align-items: flex-end;
+    height: 100%;
+    padding: 1vh;
+}
+
+.nav-item:hover {
+    background-image: linear-gradient(rgba(78, 76, 76, 0.822),rgb(235, 133, 0));
+    border-bottom: 3px solid silver;
+}
+
+.about-me{
+    text-align: center;
+    width: 50%;
+}
+
+.mainTop{
+    display: flex;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    justify-content: center;
+}
+
+.project-intro{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.project:hover {
+    background-color: purple;
+}
+
+.projectImage, #mainProject {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(235, 133, 0);
+}
+
+img .social {
+    padding: 2px;
+}
+
+img:hover {
+    opacity: 55%;
+}
+
+.socialBtn {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.social {
+    all: unset;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin: 5px;
+    padding: 2px;
+}
+
+footer a {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: whitesmoke;
+}
+
+/* Mobile or Tablet Responsiveness */
+
+
+@media screen and (min-width: 601px) {
+    div.about-me h2 {
+        margin: 0;
+        font-size: 70px;
+    }
+    div.about-me p{
+        font-size: 25px;
+      }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    div.about-me h2{
+        margin: 0;
+        font-size: 30px;
+    }
+    div.about-me p{
+        font-size: 14px;
+      }
+      #projects {
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+/* Modal Shared Styling */
+
+  
+.close, .project-close {
+    color: green;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.project-close:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+button {
+    margin-top: 5px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+/* Contact Modal Styling */
+
+.modal-contact {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.582); 
+}
+
+.contact-content {
+    background-color: #888;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+textarea {
+    
+    height: 100px;
+}
+
+#thanks {
+    display: none;
+}
+
+/* Project Modal Carousel */
+.modal-projects {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.projects-content {
+    background-color: #888;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container > img {
+    width: 50%;
+  }
+  .container > h1 {
+    font-family: 'Montserrat', impact;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-top: -1%;
+    color: green;
+    text-shadow: 1px 1px purple;
+    letter-spacing: 2px;
+  }
+  .carousel-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .carousel-button {
+    align-self: center;
+    background: green;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px purple;
+  }
+  .carousel-button:hover {
+    cursor: pointer;
+    background: purple;
+    box-shadow: 1px 1px green;
+    color: white;
+  }
